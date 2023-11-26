@@ -8,6 +8,20 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 //
+
+Cypress.Commands.add('generateRandomEmail', () => {
+    const randomString = Math.random().toString(36).substring(7);
+    const email = `testuser+${randomString}@mailinator.com`;
+    return email;
+  });
+
+Cypress.Commands.add('generateRandomWord', () => {
+    const randomWords = require('random-words');
+    return randomPassword();
+  });
+
+
+
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })

@@ -19,5 +19,8 @@
   "homepage": "https://github.com/QAYesdokAutomation/PracticeCollaborator#readme",
   "devDependencies": {
     "cypress": "^13.6.0"
+  },
+  "dependencies": {
+    "random-words": "^2.0.0"
   }
 }
